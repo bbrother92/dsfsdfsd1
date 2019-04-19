@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="smoke_suite">
+    <test name="logintest1" verbose="2" preserve-order="true" enabled="true">
+        <classes>
+            <class name="test.FooTest">
+                <methods>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="logintest2" verbose="2" preserve-order="true" enabled="true">
+        <classes>
+            <class name="test.Foo2Test">
+                <methods>
+                    <include name="login2Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
